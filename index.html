@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingreso | Integrador Web</title>
+  <!-- Enlace de CSS con ruta relativa -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main class="tarjeta">
+    <aside class="panel-imagen">
+      <img src="img/proyecto.jpg" alt="" aria-hidden="true">
+      <div class="panel-texto">
+        <h2>Ingreso al Sistema Paola</h2>
+        <p>Accede con tu usuario para continuar con tu proyecto.</p>
+      </div>
+    </aside>
+
+    <section class="panel-form">
+      <h1>Iniciar sesión</h1>
+      <p class="sub">Ingresa tus credenciales.</p>
+
+      <form id="form-login" novalidate>
+        <div class="campo">
+          <label for="nick">Nick</label>
+          <input type="text" id="nick" name="nick" autocomplete="username" placeholder="Tu nick" required>
+        </div>
+
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <div class="con-boton">
+            <input type="password" id="clave" name="clave" autocomplete="current-password" placeholder="Tu contraseña" required>
+            <button type="button" id="ver" class="ver" aria-label="Mostrar contraseña">Mostrar</button>
+          </div>
+        </div>
+
+        <p id="mensaje" class="mensaje" role="alert"></p>
+
+        <button type="submit" class="ingresar">Ingresar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
